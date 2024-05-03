@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .container {
@@ -14,35 +15,35 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+.logo img {
+  height: 50px;
 
-.navbar {
-  background-color: #333;
-  padding: 10px 0;
 }
-
-.navbar .logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-links {
+nav ul{
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
 }
-
-.nav-links li {
+nav ul li{
   margin-right: 20px;
 }
-
-.nav-links a {
+nav ul li a{
   color: #fff;
   text-decoration: none;
 }
+.book-now-btn{
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.book-now-btn:hover{
+  background-color: #e68a00;
+}
 
 
-
+/*view fleet */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -56,11 +57,7 @@ body {
   background-color: #555;
 }
 
-.services-container {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
-}
+
 
 .fleet-container {
   display: grid;
@@ -74,6 +71,8 @@ body {
   padding: 20px;
 }
 
+
+/* footer */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -105,7 +104,7 @@ body {
 }
 
 
-
+/* for slide */
 .hero-content {
   text-align: center;
   padding: 50px;
@@ -163,7 +162,13 @@ body {
   font-size: 9px;
 }
 
+/* for cards */
 
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
 
 
 .services{

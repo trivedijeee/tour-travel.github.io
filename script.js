@@ -1,15 +1,28 @@
 // Smooth scrolling for navigation links
 
+document.querySelector('.book-now-btn').addEventListener('click', function() {
+  // Add your booking logic here, like opening a booking form or navigating to a booking page.
+  alert('Booking functionality will be implemented here.');
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
 document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.carousel-slide');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
     let currentIndex = 0;
   
-    // Show initial slide
+    // Show  slide
     showSlide(currentIndex);
   
-    // Next button click event
+    // Next button click 
     nextBtn.addEventListener('click', function() {
       currentIndex++;
       if (currentIndex >= slides.length) {
@@ -18,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
       showSlide(currentIndex);
     });
   
-    // Previous button click event
+    // Previous button click 
     prevBtn.addEventListener('click', function() {
       currentIndex--;
       if (currentIndex < 0) {

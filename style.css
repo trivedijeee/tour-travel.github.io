@@ -178,6 +178,8 @@ nav ul li a{
   justify-content: center;
   font-family: "Varela Round" , sans-serif;
   line-height: 1.5em;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .services-container{
   --color: #eb904b;
@@ -267,4 +269,42 @@ span{
 
 .services-container:hover .service{
   left: 50px;
+}
+
+
+/*making slide mobile responsive */
+@media screen and (max-width: 780px) {
+  .services {
+    flex-direction: column;
+  }
+}
+
+.services-container {
+  width: 80%; 
+  
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 5px; /* Adjust the margin value as needed */  
+}
+.service {
+  padding: 10px; 
+}
+h2 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em; 
+}
+span {
+  width: 30px; 
+  height: 30px; 
+  font-size: 12px; 
+}
+@media screen and (max-width: 768px) {
+  .services-container:hover:after {
+    filter: none; 
+  }
+  .services-container:hover .service {
+    right: 0;
+  }
 }

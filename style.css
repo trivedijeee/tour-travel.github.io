@@ -307,4 +307,7 @@ span {
   .services-container:hover .service {
     right: 0;
   }
+  .hero-content, .prev-btn, .next-btn {
+    display: none;
+  }
 }

@@ -239,7 +239,47 @@ p{
   color: #555;
 
 }
-/*span{
+/* view button implement*/
+
+.button{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #faf8f8;
+  transition: all 0.5s ease-in-out;
+}
+.btn-txt{
+  z-index: 1;
+  font-weight: 800;
+}
+.type::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #252525;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+.button:hover {
+  box-shadow: 1px 1px 200px #722828;
+  color: #100f0f;
+  border: none;
+}
+.type:hover::after{
+  visibility: visible;
+  transform: scale(100) translate(2px);
+}
+.quote{
   width: 40px;
   height: 40px;
   color: #fff;
@@ -258,9 +298,8 @@ p{
   position: absolute;
   right: 5px;
   bottom: 5px;
-
-
-}*/
+}
+/*view button done*/
 
 .services-container:hover:after{
   filter: drop-shadow( 5px 0 4px #0000001a);
@@ -295,11 +334,11 @@ h2 {
 p {
   font-size: 1em; 
 }
-/*span {
+.quote {
   width: 30px; 
   height: 30px; 
   font-size: 12px; 
-}*/
+}
 @media screen and (max-width: 768px) {
   .services-container:hover:after {
     filter: none; 

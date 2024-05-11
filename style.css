@@ -239,7 +239,7 @@ p{
   color: #555;
 
 }
-span{
+/*span{
   width: 40px;
   height: 40px;
   color: #fff;
@@ -260,7 +260,7 @@ span{
   bottom: 5px;
 
 
-}
+}*/
 
 .services-container:hover:after{
   filter: drop-shadow( 5px 0 4px #0000001a);
@@ -295,11 +295,11 @@ h2 {
 p {
   font-size: 1em; 
 }
-span {
+/*span {
   width: 30px; 
   height: 30px; 
   font-size: 12px; 
-}
+}*/
 @media screen and (max-width: 768px) {
   .services-container:hover:after {
     filter: none; 

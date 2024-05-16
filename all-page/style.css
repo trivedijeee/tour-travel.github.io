@@ -54,5 +54,196 @@ main {
 }
 /* service page css*/
 
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+
+.services{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Varela Round" , sans-serif;
+  line-height: 1.5em;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.services-container{
+  --color: #eb904b;
+  width: 185px;
+  background-color: var(--color);
+  border-radius: 10px;
+  padding: 10px 5px;
+  box-shadow:
+    #3c40434d 0px 1px 2px 0px,
+    #3c404326 0px 1px 3px 1px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.services-container::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  z-index: 2;
+  height: 80%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--color);
+  border-width: 40px 40px 40px 40px;
+  filter: drop-shadow(5px 0 4px #00000094);
+  transition: filter .5s
+
+}
+.services-container:nth-child(2){
+  --color: #813085;
+
+}
+
+.services-container:nth-child(3){
+  --color: #3bade2;
+  
+}
+.services-container:nth-child(4){
+  --color: #119630;
+}
+.service{
+  background-color: #f2f2f2;
+  border: 1px solid #fff;
+  border-radius: inherit;
+  padding: 20px;
+  box-shadow:
+    #00000012 0px 1px 2px
+    #00000012 0px 2px 4px
+    #00000012 0px 4px 8px
+    #00000012 0px 8px 16px
+    #00000012 0px 16px 32px
+    #00000012 0px 32px 64px;
+  position: relative;
+  left: 10px;
+  transition: left 1s;
+}
+p{
+  color: #555;
+
+}
+/* view button implement*/
+
+.button{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #faf8f8;
+  transition: all 0.5s ease-in-out;
+}
+.btn-txt{
+  z-index: 1;
+  font-weight: 800;
+}
+.type::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #252525;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+.button:hover {
+  box-shadow: 1px 1px 200px #722828;
+  color: #100f0f;
+  border: none;
+}
+.type:hover::after{
+  visibility: visible;
+  transform: scale(100) translate(2px);
+}
+.quote{
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: var(--color);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  box-shadow: 
+    #00000012 0px 1px 2px,
+    #00000012 0px 2px 4px,
+    #00000012 0px 4px 8px,
+    #00000012 0px 8px 16px,
+    #00000012 0px 16px 32px,
+    #00000012 0px 32px 64px;
+  font-size: 14px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+/*view button done*/
+
+.services-container:hover:after{
+  filter: drop-shadow( 5px 0 4px #0000001a);
+}
+
+
+.services-container:hover .service{
+  left: 50px;
+}
+
+
+/*making slide mobile responsive */
+@media screen and (max-width: 780px) {
+  .services {
+    flex-direction: column;
+  }
+}
+
+.services-container {
+  width: 80%; 
+  
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 5px; /* Adjust the margin value as needed */  
+}
+.service {
+  padding: 10px; 
+}
+h2 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em; 
+}
+.quote {
+  width: 30px; 
+  height: 30px; 
+  font-size: 12px; 
+}
+@media screen and (max-width: 768px) {
+  .services-container:hover:after {
+    filter: none; 
+  }
+  .services-container:hover .service {
+    right: 0;
+  }
+  .hero-content, .prev-btn, .next-btn {
+    display: none;
+  }
+}
+
+
 
 /*car page css*/

@@ -2,7 +2,7 @@
 
 document.querySelector('.book-now-btn').addEventListener('click', function() {
   // Add your booking logic here, like opening a booking form or navigating to a booking page.
-  alert('Booking functionality will be implemented here.');
+  alert('Booking functionality will be implemented Soon, please contact for booking.');
 });
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {

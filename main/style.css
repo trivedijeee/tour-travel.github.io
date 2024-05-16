@@ -216,8 +216,11 @@ nav ul li a{
 }
 
 .services-container:nth-child(3){
-  --color: #119630;
+  --color: #3bade2;
   
+}
+.services-container:nth-child(4){
+  --color: #119630;
 }
 .service{
   background-color: #f2f2f2;

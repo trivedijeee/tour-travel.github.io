@@ -10,6 +10,8 @@ body {
   background-color: hsl(0, 0%, 96%);
 }
 
+/*about page css*/
+
 .about {
   max-width: 90%; /* Adjust as needed */
   margin: 0 auto;
@@ -50,4 +52,7 @@ main {
     margin-left: 20px; /* Restored margin for larger screens */
   }
 }
+/* service page css*/
 
+
+/*car page css*/
